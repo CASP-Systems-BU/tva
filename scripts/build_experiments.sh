@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd ../build && rm -rf *
+mkdir -p ../build && cd ../build && rm -rf *
 if (( $# > 0 ))
 then
     exp_protocol=${1}

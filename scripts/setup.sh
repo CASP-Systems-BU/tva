@@ -17,13 +17,23 @@ sudo make install
 sudo ldconfig
 
 
-# Setup MPI
-cd /src
-wget https://www.mpich.org/static/downloads/1.4/mpich2-1.4.tar.gz
-tar -xzf mpich2-1.4.tar.gz
-cd /src/mpich2-1.4
+# # Setup MPICH
+# cd /src
+# wget https://www.mpich.org/static/downloads/4.1/mpich-4.1.tar.gz
+# tar -xzf mpich-4.1.tar.gz
+# cd /src/mpich-4.1
+# ./configure
+# make -j4
+# make
+# sudo make install
+# sudo ldconfig
+
+
+# Setup OPEN-MPI
+wget https://download.open-mpi.org/release/open-mpi/v4.1/openmpi-4.1.5.tar.gz
+tar -xzf openmpi-4.1.5.tar.gz
+cd /src/openmpi-4.1.5
 ./configure
 make -j4
-make
 sudo make install
 sudo ldconfig
