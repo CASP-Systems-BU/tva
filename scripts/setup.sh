@@ -10,7 +10,7 @@ wget https://download.libsodium.org/libsodium/releases/libsodium-1.0.18-stable.t
 tar -xzf libsodium-1.0.18-stable.tar.gz
 cd /src/libsodium-stable
 ./configure
-make -j4
+make -j16
 make
 make check
 sudo make install
@@ -35,6 +35,6 @@ wget https://download.open-mpi.org/release/open-mpi/v4.1/openmpi-4.1.5.tar.gz
 tar -xzf openmpi-4.1.5.tar.gz
 cd /src/openmpi-4.1.5
 ./configure
-make -j4
+make -j16
 sudo make install
 sudo ldconfig
