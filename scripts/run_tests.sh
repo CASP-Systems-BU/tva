@@ -11,7 +11,7 @@ make -j1
 
 MPIRUN="mpirun -np"
 PARTIES=3
-dirlist=`find ../tests/ -name "*.cpp" | xargs basename | sed 's/\.[^.]*$//'`
+dirlist=`find ../tests/ -type f -exec basename {} \; | sed 's/\.[^.]*$//'`
 
 for test in ${dirlist}
 do
