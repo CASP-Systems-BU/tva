@@ -11,7 +11,7 @@ This repository is organized as follows:
 
 Building TVA (One Node)
 ============
-The following instructions assume a single-node setup. Check `/scripts/setup.sh/` for an example setup script.
+The following instructions assume a single-node setup. Check `./scripts/setup.sh` for an example setup script.
 
 To build Secrecy, you will need to install:
 - Compilers for C++14.
