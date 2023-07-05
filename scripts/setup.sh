@@ -1,5 +1,5 @@
 sudo apt update
-sudo apt install git cmake pkg-config build-essential manpages-dev gfortran wget
+sudo apt install git cmake pkg-config build-essential manpages-dev gfortran wget -y
 
 sudo mkdir -p /src
 sudo chmod -R 777 /src
@@ -30,6 +30,7 @@ sudo ldconfig
 
 
 # Setup OPEN-MPI
+cd /src
 wget https://download.open-mpi.org/release/open-mpi/v4.1/openmpi-4.1.5.tar.gz
 tar -xzf openmpi-4.1.5.tar.gz
 cd /src/openmpi-4.1.5
