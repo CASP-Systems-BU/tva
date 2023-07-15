@@ -28,7 +28,7 @@ then
                 mpirun --host machine-1,machine-2,machine-3 -np 3 ./${exp_name} 16 1 8192 $ROWS >> ../results/lan/${exp_name}-semi-results.txt
             elif [ ${exp_setting} = "wan" ]
             then
-                mpirun --host machine-wan-1,machine-wan-2,machine-wan-3 -np 3 ./${exp_name} 64 1 8192 $ROWS >> ../results/wan/${exp_name}-semi-results.txt
+                mpirun --host machine-wan-1,machine-wan-2,machine-wan-3 -np 3 ./${exp_name} 64 1 4096 $ROWS >> ../results/wan/${exp_name}-semi-results.txt
             fi
         elif [ ${exp_protocol} = "mal" ]
         then
@@ -40,7 +40,7 @@ then
                 mpirun --host machine-1,machine-2,machine-3,machine-4 -np 4 ./${exp_name} 16 1 4096 $ROWS >> ../results/lan/${exp_name}-mal-results.txt
             elif [ ${exp_setting} = "wan" ]
             then
-                mpirun --host machine-wan-1,machine-wan-2,machine-wan-3,machine-wan-4 -np 4 ./${exp_name} 16 1 8192 $ROWS >> ../results/wan/${exp_name}-mal-results.txt
+                mpirun --host machine-wan-1,machine-wan-2,machine-wan-3,machine-wan-4 -np 4 ./${exp_name} 64 1 4096 $ROWS >> ../results/wan/${exp_name}-mal-results.txt
             fi
         fi
     done
