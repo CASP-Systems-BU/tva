@@ -37,10 +37,10 @@ then
                 mpirun -np 4 ./${exp_name} 1 1 8192 $ROWS >> ../results/same/${exp_name}-mal-results.txt
             elif [ ${exp_setting} = "lan" ]
             then
-                mpirun --host machine-1,machine-2,machine-3,machine-4 -np 4 ./${exp_name} 256 1 8192 $ROWS >> ../results/lan/${exp_name}-mal-results.txt
+                mpirun --host machine-1,machine-2,machine-3,machine-4 -np 4 ./${exp_name} 256 1 4096 $ROWS >> ../results/lan/${exp_name}-mal-results.txt
             elif [ ${exp_setting} = "wan" ]
             then
-                mpirun --host machine-wan-1,machine-wan-2,machine-wan-3,machine-wan-4 -np 4 ./${exp_name} 256 1 8192 $ROWS >> ../results/wan/${exp_name}-mal-results.txt
+                mpirun --host machine-wan-1,machine-wan-2,machine-wan-3,machine-wan-4 -np 4 ./${exp_name} 256 1 4096 $ROWS >> ../results/wan/${exp_name}-mal-results.txt
             fi
         fi
     done
