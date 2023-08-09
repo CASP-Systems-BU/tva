@@ -1,6 +1,6 @@
 # TVA: A multi-party computation system for secure and expressive time series analytics
-
-TVA is a multi-party computation (MPC) system for secure analytics on secret-shared time series data. TVA supports replicated three parties secret sharing schema and the four parties secret sharing schema of the fantastic four paper.
+This repository includes the implementation of the TVA multi-party computation (MPC) system for secure time series analytics described in the [USENIX Security'23 paper](https://www.usenix.org/conference/usenixsecurity23/presentation/faisal) by Muhammad Faisal, Jerry Zhang, John Liagouris, Vasiliki Kalavri, and Mayank Varia. TVA currently provides two replicated secret sharing protocols: (i) the semi-honest 3-party protocol by Araki et al. and (ii) the malicious-secure
+Fantastic Four protocol by Dalskov et al.
 
 This repository is organized as follows:
 - The `./include/` folder contains the core functionality of TVA, including the implementation of MPC primitives, relational oblivious operators, and party communication.
