@@ -21,7 +21,7 @@ To build Secrecy, you will need to install:
 
 The previous requirments should be enough for testing the system functionalities using a single machine that has all computing parties. 
 
-
+    
 Building and running using experiments the `CMakeLists.txt` file:
 -------------
 - Make sure you have all dependencies installed and then create the build directort:
@@ -50,8 +50,7 @@ Building TVA (Cluster)
 ============
 In order to use the framework in the LAN or WAN settings, we need to replicate the previous steps for each machine in the computing parties cluster. Make sure to use same paths on each machine when cloning and building the repository. Once, we have TVA working on every machine, we can now start building the cluster. For this we need to do the following:
 - Make sure that machines have pair wise SSH access to each other. This step depends on the cloud service provider as firewall settings and defaults are different.
-- Make sure each machine also has SSH access to itself and traffic is allowed (disable any firewall).
-- Modify the `./etc/hosts` file on each machine to include other computing parties (and itself) with names in the format `machine-i` for LAN and `machine-wan-i` for WAN.
+- Modify the `./etc/hosts` file on each machine to include other computing parties with names in the format `machine-i` for LAN and `machine-wan-i` for WAN.
 - Build the executables using either the semi-honest `semi` or the malicious protocol `mal` on each machine using the following script.
 ```
 cd scripts
